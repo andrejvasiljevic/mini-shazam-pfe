@@ -1,0 +1,18 @@
+# Environments
+venv_mini_shazam/
+env/
+__pycache__/
+
+# Data (Do not upload gigabytes of audio!)
+songs/
+noise/
+original_dataset/
+noisy_dataset/
+
+# Models
+models/
+*.pth
+*.pt
+
+# Jupyter Checkpoints
+.ipynb_checkpoints/

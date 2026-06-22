@@ -1,0 +1,10 @@
+torch
+torchvision
+torchaudio
+torchcodec
+pytorch-metric-learning
+pydub
+scikit-learn
+tqdm
+faiss-cpu
+numpy
