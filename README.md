@@ -24,22 +24,3 @@ The 86% stress-test accuracy proves the model successfully learned to isolate th
 * **Metric Learning:** PyTorch-Metric-Learning (Hard Triplet Miner)
 * **Vector Search:** FAISS
 * **Audio Processing:** PyDub
-
-## 🚀 How to Run Inference
-
-If you have a pre-trained `.pth` weights file, you can test the model on a raw audio recording using the inference script:
-
-```python
-import torch
-from shazam_inference import shazam_this
-
-# Load model and FAISS/PyTorch database
-model.load_state_dict(torch.load("models/audio_resnet_epoch_20.pth"))
-
-# Predict a raw audio file
-predicted_song = shazam_this(
-    "my_phone_recording.wav", 
-    model, 
-    database_matrix, 
-    database_labels
-)
